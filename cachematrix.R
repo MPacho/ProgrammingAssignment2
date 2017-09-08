@@ -3,12 +3,12 @@
 
 ## makeCacheMatrix is an intermediate function that returns a list
 ## of four functions that are used later on in creating and retrieving
-## a cache for inversed matrix:
-## - set() which sets a new matrix to be inversed
-## - get() which gets the current matrix to be inversed
-## - setinv() which sets the calculated inversed matrix as cached result
+## a cache for inverse matrix:
+## - set() which sets a new matrix to inverse
+## - get() which gets the current matrix to inverse
+## - setinv() which sets the calculated inverse matrix as cached result
 ## - getinv() which retrieves the current cache
-## It takes one argument - a matrix to be inversed
+## It takes one argument - a matrix to inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -26,9 +26,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve function is the final function which:
-## - calculates the inverted matrix and puts it into cache if the cache 
+## - calculates the inverse matrix and puts it into cache if the cache 
 ##   is not yet present
-## - returns the cached inverted matrix if the cache is already present 
+## - returns the cached inverse matrix if the cache is already present 
 ## It takes as argument an object of type makeCacheMatrix and optionally 
 ## other parametres of the solve() function 
 
